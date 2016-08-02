@@ -33,6 +33,6 @@ res.write('</ul>');
 
 res.write('<p>Happy Clouding!</p>');
 
-res.end('<p>'+ process.env.Developer +'</p>');
+res.end('<p>'+ process.env.mediavaletbaseurl +'</p>');
 
 }).listen(port);
