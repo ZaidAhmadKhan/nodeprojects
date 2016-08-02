@@ -1,0 +1,12 @@
+C:\development\MainDevelopment\MediaValetAppsSdk\bin\mediaAppJs.dll.config
+C:\development\MainDevelopment\MediaValetAppsSdk\bin\mediaAppJs.dll
+C:\development\MainDevelopment\MediaValetAppsSdk\bin\mediaAppJs.pdb
+C:\development\MainDevelopment\MediaValetAppsSdk\obj\Debug\mediaAppJs.csprojResolveAssemblyReference.cache
+C:\development\MainDevelopment\MediaValetAppsSdk\obj\Debug\mediaAppJs.dll
+C:\development\MainDevelopment\MediaValetAppsSdk\obj\Debug\mediaAppJs.pdb
+C:\development\MediavaletSDK\bin\mediaAppJs.dll.config
+C:\development\MediavaletSDK\bin\mediaAppJs.dll
+C:\development\MediavaletSDK\bin\mediaAppJs.pdb
+C:\development\MediavaletSDK\obj\Debug\mediaAppJs.csprojResolveAssemblyReference.cache
+C:\development\MediavaletSDK\obj\Debug\mediaAppJs.dll
+C:\development\MediavaletSDK\obj\Debug\mediaAppJs.pdb

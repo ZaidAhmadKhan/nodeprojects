@@ -1,0 +1,6 @@
+C:\development\MediavaletSDK\bin\mediaAppJs.dll.config
+C:\development\MediavaletSDK\bin\mediaAppJs.dll
+C:\development\MediavaletSDK\bin\mediaAppJs.pdb
+C:\development\MediavaletSDK\obj\Release\mediaAppJs.csprojResolveAssemblyReference.cache
+C:\development\MediavaletSDK\obj\Release\mediaAppJs.dll
+C:\development\MediavaletSDK\obj\Release\mediaAppJs.pdb
