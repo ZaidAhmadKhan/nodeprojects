@@ -1,5 +1,0 @@
-{
-   "servers" : {
-       process.env.mediavaletbaseurl
-   }
-}
