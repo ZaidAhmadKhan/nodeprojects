@@ -1,3 +1,4 @@
+/*
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -8,9 +9,30 @@ app.get('/', function(req, res){
 });
 io.on('connection', function(socket){
  socket.on('chat message', function(msg){
- io.emit('chat message', process.env.mediavaletbaseurl);
+ io.emit('chat message', );
  });
 });
 http.listen(port, function(){
  console.log('listening on ' + port);
 });
+*/
+
+
+//process.env.mediavaletbaseurl
+
+var http = require('http');
+var port = process.env.port || 4043;
+
+http.createServer(function(req, res) {
+
+res.write('<p>Hello from ' + process.env.mediavaletbaseurl +' </p>');
+res.write('<ul>');
+res.write('<li><label>Service Bus Namespace:</label>'+ process.env.mediavaletbaseurl +' </li>');
+res.write('<li><label>Storage Connection String:</label>'+ process.env.mediavaletbaseurl +' </li>');
+res.write('</ul>');
+
+res.write('<p>Happy Clouding!</p>');
+
+res.end('<p>'+ process.env.Developer +'</p>');
+
+}).listen(port);
