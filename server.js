@@ -9,10 +9,11 @@ app.get('/GetBaseUrl', function (req, res) {
 		res.end('Sorry !:-( there is no base url found')
 	}
 	
-   fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
+   /*fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        console.log( data );
        res.end(data);
    });
+   */
 })
 
 var server = app.listen(8081, function () {
