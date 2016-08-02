@@ -22,13 +22,12 @@ http.listen(port, function(){
 
 var http = require('http');
 var port = process.env.port || 4043;
-
 http.createServer(function(req, res) {
 
 res.write('<p>Hello from ' + process.env.mediavaletbaseurl +' </p>');
 res.write('<ul>');
-res.write('<li><label>Service Bus Namespace:</label>'+ process.env.mediavaletbaseurl +' </li>');
-res.write('<li><label>Storage Connection String:</label>'+ process.env.mediavaletbaseurl +' </li>');
+res.write('<li><label>Azure App Setting Name </label>'+ process.env.mediavaletbaseurl +' </li>');
+
 res.write('</ul>');
 
 res.write('<p>Happy Clouding!</p>');
