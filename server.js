@@ -1,20 +1,17 @@
 var express = require('express');
 var app = express();
-var fs = require("fs");
 
 app.get('/GetBaseUrl', function (req, res) {
-	if(process.env.mediavaletbaseurl!=undefined){
-		res.end(process.env.mediavaletbaseurl)
-	}else{
-		res.end('Sorry !:-( there is no base url found')
-	}
-	
-   /*fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
-       console.log( data );
-       res.end(data);
-   });
-   */
-})
+    try{
+        if (process.env.mediavaletbaseurl != undefined) {
+            res.end(process.env.mediavaletbaseurl)
+        } else {
+            res.end('Sorry base url not found')
+        }
+    } catch (e) {
+        res.end(e)
+    }
+});
 
 var server = app.listen(4043, function () {
 
