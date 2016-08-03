@@ -25,23 +25,16 @@ app.get('/', function (req, res) {
 });
 
 */
-
-
 var express = require('express');
 var app = express();
-
 app.get('/', function (req, res) {
     if (process.env.mediavaletapp != undefined) {
         res.send(process.env.mediavaletapp);
         res.send(process.env.mediavaletapp);
     } else {
-   
-
         res.send('Value is null');
     }
- 
 });
-
-app.listen(3000, function () {
+app.listen(8081, function () {
     console.log('Example app listening on port 3000!');
 });
