@@ -1,4 +1,4 @@
-
+/*
 
 var http = require('http');
 var port = process.env.port || 4043;
@@ -12,3 +12,15 @@ http.createServer(function(req, res) {
     }).listen(port); 
 
     
+
+    */
+
+
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+    res.send(process.env.mediavaletapp);
+
+});
+app.listen(3001);
+console.log('lisening on 3001');

@@ -1,10 +1,9 @@
 {
-"name":"restful",
-"main":"server.js",
-"dependencies":"my first socket.io app",
+"name":"noderest",
+"description":"Demo ",
+  "version": "1.0.0.1",
+  "private": true,
 "dependencies":{ 
-"express":"latest",
-"mongoose":"latest",
-"node-restful":"latest"
+"express":"3.x"
  }
 }
