@@ -1,6 +1,10 @@
 {
-  "name": "Node JS App settings",
-  "version": "1.0.0",
-  "description": "Node JS First App",
-  "dependencies": { }
+"name":"restful",
+"main":"server.js",
+"dependencies":"my first socket.io app",
+"dependencies":{ 
+"express":"latest",
+"mongoose":"latest",
+"node-restful":"latest"
+ }
 }
