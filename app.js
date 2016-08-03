@@ -3,11 +3,16 @@
 var http = require('http');
 var port = process.env.port || 4043;
 http.createServer(function(req, res) {
-    
-    res.write('<p>APP settings URL ' + process.env.mediavaletapp + ' </p>');
-
-    
-    res.end('<p>' + process.env.mediavaletapp + '</p>');
+    try{
+        if(process.env.mediavaletapp!=undefined){
+            res.write(process.env.mediavaletapp);
+        }else{
+            res.write('value not found');
+        }
+    } catch (e) {
+        res.write('Some Error  ' + e );
+    }
+   
     
     }).listen(port); 
 
