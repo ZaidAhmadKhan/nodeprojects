@@ -1,73 +1,52 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Socket.IO chat</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
 
-        body {
-            font: 13px Helvetica, Arial;
-        }
-
-        form {
-            background: #000;
-            padding: 3px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-            form input {
-                border: 0;
-                padding: 10px;
-                width: 90%;
-                margin-right: .5%;
-            }
-
-            form button {
-                width: 9%;
-                background: rgb(130, 224, 255);
-                border: none;
-                padding: 10px;
-            }
-
-        #messages {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-            #messages li {
-                padding: 5px 10px;
-            }
-
-                #messages li:nth-child(odd) {
-                    background: #eee;
+     <link href="https://amp.azure.net/libs/amp/1.6.3/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+    <script src="https://amp.azure.net/libs/amp/1.6.3/azuremediaplayer.min.js"></script>
+    <link href="Style/EloquaStyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/mediaValet.Core.js"></script>
+    <script src="Scripts/mediavaletEloqua.js"></script>
+    <script src="Scripts/mediaValet.Ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    </script>
+    <script>
+        jQuery(window).on("load", function () {
+            console.log(window.location.href)
+   
+           // localStorage.setItem("eloquqafirsturl", window.location.href);
+            $('#mvapp-container').LoginUI({
+                customText: 'Welcome To MediaValet',
+                setting: false,
+                menu: true,
+                apps: 'eloqua',
+                eloquaurl: 'https://mvo365demo.mediavalet.com/develop/',
+                view:
+                {
+                    recentview: true,
                 }
+            });
+            /** ApplicationInsights 
+           *@param Instrumentation ID
+           *
+           */
+            mvAppSdkCore.ApplicationInsights('9927b492-30a3-4107-823c-666ce0c365ba');
+               
+        });
+       
+    </script>
+    <style type="text/css">
     </style>
 </head>
 <body>
-    <h1>Node.js & Socket.io Chat Room!</h1>
-    <ul id="messages"></ul>
-    <form action="">
-        <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
-    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script>
- var socket = io();
- $('form').submit(function(){
- socket.emit('chat message', $('#m').val());
- $('#m').val('');
- return false;
- });
- socket.on('chat message', function(msg){
- $('#messages').append($('<li>').text(msg));
- });
-    </script>
+    <div id="mvapp-container">
+
+    </div>
+
 </body>
 </html>
