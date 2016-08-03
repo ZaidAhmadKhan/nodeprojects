@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script>
+    amp.options.flashSS.swf = "//amp.azure.net/libs/amp/latest/techs/StrobeMediaPlayback.2.0.swf"
+    amp.options.flashSS.plugin = "//amp.azure.net/libs/amp/latest/techs/MSAdaptiveStreamingPlugin-osmf2.0.swf"
+    amp.options.silverlightSS.xap = "//amp.azure.net/libs/amp/latest/techs/SmoothStreamingPlayer.xap"
+    </script>
+
+    <link href="https://amp.azure.net/libs/amp/1.6.3/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+    <script src="https://amp.azure.net/libs/amp/1.6.3/azuremediaplayer.min.js"></script>
+    <link href="Style/EloquaStyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/mediaValet.Core.js"></script>
+    <script src="Scripts/mediavaletEloqua.js"></script>
+    <script src="Scripts/mediaValet.Ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+    </script>
+    <script>
+        jQuery(window).on("load", function () {
+       
+            localStorage.setItem("eloquqafirsturl", window.location.href);
+           var cookiesvalues= getCookie("eloquarefreshtoken")
+           if (cookiesvalues == null) {
+               window.location.href = "https://login.eloqua.com/auth/oauth2/authorize?response_type=code&client_id=f43da169-4519-43d2-9a70-52eea60b0bc7&redirect_uri=https://mvo365demo.mediavalet.com/develop/&scope=full&state=xyz&instance={InstanceId}";
+           } else {
+               $('#mvapp-container').LoginUI({
+                   customText: 'Welcome To MediaValet',
+                   setting: false,
+                   menu: true,
+                   apps: 'eloqua',
+                   eloquaurl: 'https://mvo365demo.mediavalet.com/develop/',
+                   view:
+                   {
+                       recentview: true,
+                   }
+               });
+           }
+        });
+        function getCookie(name) {
+            var re = new RegExp(name + "=([^;]+)");
+            var value = re.exec(document.cookie);
+            return (value != null) ? unescape(value[1]) : null;
+        }
+
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div id="mvapp-container">
+
+    </div>
+
+</body>
+</html>

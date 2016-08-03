@@ -1,0 +1,295 @@
+﻿Product Name - MediaValet SDK
+Overview - JavaScript plug-in for MediaValet applications, provides a sleek and responsive UI to access and use media assets into various office tools like Word, Excel, PowerPoint and Outlook compose message view or web based applications like Hootsuite, WordPress, Joomla etc.
+
+Release number: 0.9.029
+Date of Release: 2016-04-20
+TFS Label: MediaValetSDK_REL0.9.029_20160420
+
+Features/Fixes in this release:
+1. Hoot Suite  Ui Changes
+2. Drupal Ui Changes and code Implemented
+3. Office Number of Images Loading Issue Fixed
+-------------------------------
+
+Release number: 0.9.028
+Date of Release: 2016-04-18
+TFS Label: MediaValetSDK_REL0.9.028_20160419
+
+Features/Fixes in this release:
+1. Hoot Suite Bug fixes
+2. Drupal Ui Changes
+-------------------------------
+
+
+Release number: 0.9.027
+Date of Release: 2016-04-18
+TFS Label: MediaValetSDK_REL0.9.027_20160418
+
+Features/Fixes in this release:
+1. Code conflict resolved and new code development from Philippe's side merged
+-------------------------------
+
+
+Release number: 0.9.026
+Date of Release: 2016-04-15
+TFS Label: MediaValetSDK_REL0.9.026_20160415
+
+Features/Fixes in this release:
+1. Hootsuite - New UI and relevant functionalities updated 
+2. Office Ui issue Fixed
+3. Hootsuite Gear menu - not closing on outside click issue fixed
+-------------------------------
+
+Release number: 0.9.025
+Date of Release: 2016-04-13
+TFS Label: MediaValetSDK_REL0.9.025_20160413
+
+Features/Fixes in this release:
+1. Border on thumbs issue fixed
+2.Featured Categories - background turning transparent on mouse over on pin/tick image fixed
+-------------------------------
+
+Release number: 0.9.024
+Date of Release: 2016-04-12
+TFS Label: MediaValetSDK_REL0.9.024_20160412
+
+Features/Fixes in this release:
+1. Bug related to ui fixed.
+2. 
+-------------------------------
+
+Release number: 0.9.023
+Date of Release: 2016-04-11
+TFS Label: MediaValetSDK_REL0.9.023_20160411
+
+Features/Fixes in this release:
+1. Featured Categories - Change background on hover, up/down pinned categories implemented in limited way
+2. 
+-------------------------------
+
+Release number: 0.9.022
+Date of Release: 2016-04-08
+TFS Label: MediaValetSDK_REL0.9.022_20160408
+
+Features/Fixes in this release:
+1. Segoe UI font added for Show More button
+2. Dropdownlist left aligning adjusted
+-------------------------------
+
+Release number: 0.9.022
+Date of Release: 2016-04-08
+TFS Label: MediaValetSDK_REL0.9.022_20160408
+
+Features/Fixes in this release:
+1. Segoe UI font added for Show More button
+2. Dropdownlist left aligning adjusted
+-------------------------------
+
+Release number: 0.9.021
+Date of Release: 2016-04-07
+TFS Label: MediaValetSDK_REL0.9.021_20160407
+
+Features/Fixes in this release:
+1. Tracking for login, logout, asset view and download implemented
+2. 
+-------------------------------
+
+Release number: 0.9.020
+Date of Release: 2016-04-05
+TFS Label: MediaValetSDK_REL0.9.020_20160405
+
+Features/Fixes in this release:
+1. Infinite scrolling not working - Load More Assets button applied at place of scroll
+2. 
+-------------------------------
+
+Release number: 0.9.019
+Date of Release: 2016-03-31
+TFS Label: MediaValetSDK_REL0.9.019_20160331
+
+Features/Fixes in this release:
+1. PPT - Insert asset link doesn't work anymore - issue fixed
+2. 
+-------------------------------
+
+Release number: 0.9.018
+Date of Release: 2016-03-30
+TFS Label: MediaValetSDK_REL0.9.018_20160330
+
+Features/Fixes in this release:
+1. CategoriesListing - Add/update categories using orgUnit ID instead of DomainName and email
+2. PPT - Insert asset link doesn't work anymore
+-------------------------------
+
+Release number: 0.9.017
+Date of Release: 2016-03-29
+TFS Label: MediaValetSDK_REL0.9.017_20160329
+
+Features/Fixes in this release:
+1. Pinned categories - new org
+2. 
+-------------------------------
+
+Release number: 0.9.016
+Date of Release: 2016-03-28
+TFS Label: MediaValetSDK_REL0.9.016_20160328
+
+Features/Fixes in this release:
+1. Spinning wheel
+2. Description
+3. Pinned categories dropdown - capitalization
+-------------------------------
+
+Release number: 0.9.015
+Date of Release: 2016-03-24
+TFS Label: MediaValetSDK_REL0.9.015_20160324
+
+Features/Fixes in this release:
+1. Infinite Scroling Fixed
+-------------------------------
+
+Release number: 0.9.014
+Date of Release: 2016-03-22
+TFS Label: MediaValetSDK_REL0.9.014_20160322
+
+Features/Fixes in this release:
+1. HOO-15 ajax refresh folder collapse crash fixed
+-------------------------------
+
+Release number: 0.9.013
+Date of Release: 2016-03-21
+TFS Label: MediaValetSDK_REL0.9.013_20160321
+
+Features/Fixes in this release:
+1. Image Ratio Bug Fixed
+-------------------------------
+
+Release number: 0.9.012
+Date of Release: 2016-03-21
+TFS Label: MediaValetSDK_REL0.9.012_20160321
+
+Features/Fixes in this release:
+1. App-specific login implemented
+2. Image Ratio Bug Fixed
+-------------------------------
+
+Release number: 0.9.011
+Date of Release: 2016-03-19
+TFS Label: MediaValetSDK_REL0.9.011_20160319
+
+Features/Fixes in this release:
+1. Retrieve api url based on login credentials
+2. Infinite scrolling not working
+3. Pinned categorie - should be different per application
+4. Administrator can't see "edit pinned categories"
+5. Write message view - alignment
+6. Ajax refresh
+7. Office - search bar
+8. Pinned categories - plugin crashes and category tree is broken
+9. Pinned categories - icon too far on the right
+-------------------------------
+
+Release number: 0.9.010
+Date of Release: 2016-03-16
+TFS Label: MediaValetSDK_REL0.9.010_20160316
+
+Features/Fixes in this release:
+1. All categories - one line
+2. Pinned categories - duplicate menu
+3. Select asset button alignment - reviewed
+4. Office - search bar
+5. Expired token
+-------------------------------
+
+Release number: 0.9.009
+Date of Release: 2016-03-15
+TFS Label: MediaValetSDK_REL0.9.009_20160315
+
+Features/Fixes in this release:
+1. Retrieve api url based on login credentials
+2. Write message view alignment
+3. Select asset button alignment
+4. Office - search bar
+5. Pinned Categories - icon background
+6. Unpin from Pinned Categories section
+-------------------------------
+
+Release number: 0.9.008
+Date of Release: 2016-03-11
+TFS Label: MediaValetSDK_REL0.9.008_20160311
+
+Features/Fixes in this release:
+1. Infinite scrolling not working issue fixed
+2. Image ratio issue fixed
+3. Hootsuite Compose View - Mouseover flickering issue fixed
+4. Hootsuite Compose View - alignment issue fixed
+5. Edit Pinned Categories - blank screen issue fixed
+6. PPT - Insert Asset link doesn't work anymore issue fixed
+-------------------------------
+
+Release number: 0.9.007 
+Date of Release: 2016-03-10
+TFS Label: MediaValetSDK_REL0.9.007_20160310
+
+Features/Fixes in this release:
+1. Edit Pinned Categories icons not showing up
+2. Expired Token
+-------------------------------
+
+Release number: 0.9.006 
+Date of Release: 2016-03-09
+TFS Label: MediaValetSDK_REL0.9.006_20160309
+
+Features/Fixes in this release:
+1. Edit Pinned Categories implemented
+2. Category dropdown, Search and settings alignment issue fixed as per client requirement
+3. Hootsuite asset title visibility issue fixed
+-------------------------------
+
+Release number: 0.9.005 
+Date of Release: 2016-03-08
+TFS Label: MediaValetSDK_REL0.9.005_20160308
+
+Features/Fixes in this release:
+1. Edit Pinned Categories CSS issue fixed
+2. Category dropdown, Search and settings alignment issue fixed
+3. Write Message View alignment issue for Hootsuite fixed
+-------------------------------
+
+Release number: 0.9.004 
+Date of Release: 2016-03-07
+TFS Label: MediaValetSDK_REL0.9.004_20160307
+
+Features/Fixes in this release:
+1. Edit Pinned Catategories implemented
+2. Hootsuite css bugs fixed except Compose View tooltip
+3. Infinite scrolling issue fixed
+-------------------------------
+
+Release number: 0.9.003 
+Date of Release: 2016-03-02
+TFS Label: MediaValetSDK_REL0.9.003_20160302
+
+Features/Fixes in this release:
+1. SDK Hootsuite view and Office view modified
+2.  
+-------------------------------
+
+Release number: 0.9.002 
+Date of Release: 2016-02-25
+TFS Label: MediaValetSDK_REL0.9.002_20160225
+
+Features/Fixes in this release:
+1. API call to get categories for a user implemented
+2. HTTPS support applied with new certificate for URLMapping 
+-------------------------------
+
+Release number: 0.9.001 
+Date of Release: 2016-02-24
+TFS Label: MediaValetSDK_REL0.9.001_20160224
+
+Features/Fixes in this release:
+1. API call to get Client ID implemented
+2. API call to get user authentication type implemented
+3. URLMapping implemented
+-------------------------------

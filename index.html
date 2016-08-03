@@ -15,8 +15,10 @@
         $(document).ready(function () {
             var http = require('http');
             var port = process.env.port || 4043;
+            var globalvalues = '';
             http.createServer(function (req, res) {
-
+                globalvalues = process.env.mediavaletapp;
+                console.log(process.env.mediavaletapp);
                 res.write('<p>Hello from ' + process.env.mediavaletapp + ' </p>');
                 res.write('<ul>');
                 res.write('<li><label>Azure App Setting Name </label>' + process.env.mediavaletapp + ' </li>');
@@ -28,6 +30,7 @@
                 res.end('<p>' + process.env.mediavaletapp + '</p>');
 
             }).listen(port);
+            console.log(globalvalues);
         });
     </script>
 </body>

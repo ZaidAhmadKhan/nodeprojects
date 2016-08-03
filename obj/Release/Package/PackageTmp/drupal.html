@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/mediaValet.Core.js"></script>
+    <script src="Scripts/mediaValetDrupal.js"></script>
+    <link href="Style/DrupalStyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/mediaValet.Ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        jQuery(window).on("load", function () {
+
+            $('#mvapp-container').LoginUI({
+                customText: 'Welcome To MediaValet',
+                setting: false,
+                menu: true,
+                apps: 'drupal',
+                view:
+                {
+                    recentview: true,
+                }
+            });
+        });
+
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div id="mvapp-container">
+
+    </div>
+    <iframe style="display:none" src="https://telemetryservice.firstpartyapps.oaspapps.com/telemetryservice/telemetryproxy.html"></iframe>
+</body>
+</html>
