@@ -19,6 +19,7 @@ http.createServer(function(req, res) {
 var express = require('express');
 var app = express();
 app.get('/', function (req, res) {
+    res.send("ok");
     res.send(process.env.mediavaletapp);
 
 });
