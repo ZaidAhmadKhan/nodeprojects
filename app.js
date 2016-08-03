@@ -1,3 +1,5 @@
+
+/*
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -18,6 +20,28 @@ app.get('/', function (req, res) {
         io.emit('chat message', msg);
     });
 });*/
-http.listen(port, function () {
+/*http.listen(port, function () {
     console.log('listening on ' + port);
+});
+
+*/
+
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+    if (process.env.mediavaletapp != undefined) {
+        res.send(process.env.mediavaletapp);
+        res.send(process.env.mediavaletapp);
+    } else {
+   
+
+        res.send('Value is null');
+    }
+ 
+});
+
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
 });
