@@ -1,9 +1,16 @@
-var http = require("http");
-
-http.createServer(function (request, response) {
-    // Send the response body as "Hello World"
-    response.end(process.env.mediavaletbaseurl);
-}).listen(8081);
-
-// Console will print the message
-console.log('Server running at http://127.0.0.1:8081/');
+var express = require('express');
+var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+var port = process.env.PORT || 3000;
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
+io.on('connection', function (socket) {
+    socket.on('chat message', function (msg) {
+        io.emit('chat message', msg);
+    });
+});
+http.listen(port, function () {
+    console.log('listening on ' + port);
+});
